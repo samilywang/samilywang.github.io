@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>Samily Wang's Blog</title>
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% feed_meta %}
+  {% seo %}
+</head>
+
+<body>
+  <header class="header">
+    <div class="name-logo logo-font">{{ site.logo_text }}</div>
+    <ul class="menus">
+      <li>
+        <a href="/index.html" {% if page.url=='/' %} class="active" {% endif %}>首页</a>
+      </li>
+      <li>
+        <a href="/blogs.html" {% if page.url=='/blogs.html' %} class="active" {% endif %}>博客</a>
+      </li>
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank">
+          <img class="github-icon" src="/assets/images/logo/github.png" />
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="main-viewport">
+    {{ content }}
+  </main>
+</body>
+
+</html>
