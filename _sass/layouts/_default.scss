@@ -29,8 +29,7 @@
       position: relative;
       min-width: 80px;
       font-size: 18px;
-      text-align: center;
-      cursor: pointer;
+      text-align: right;
 
       &:hover {
         color: var(--color-primary);
@@ -44,11 +43,23 @@
       .github-icon {
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        right: 0;
+        transform: translateY(-50%);
         width: 32px;
         height: 32px;
       }
     }
+  }
+}
+
+@media (max-width: 1324px) {
+  .main-viewport {
+    margin: 0 24px;
+    max-width: 100%;
+  }
+
+  .header {
+    margin: 0 24px;
+    max-width: 100%;
   }
 }

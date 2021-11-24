@@ -12,14 +12,13 @@
 
 <body>
   <header class="header">
-    <div class="name-logo logo-font">{{ site.logo_text }}</div>
+    <div class="name-logo logo-font"><a href="/">{{ site.logo_text }}</a></div>
     <ul class="menus">
+      {% if page.url!='/' %}
       <li>
-        <a href="/index.html" {% if page.url=='/' %} class="active" {% endif %}>首页</a>
+        <a href="/">首页</a>
       </li>
-      <li>
-        <a href="/blogs.html" {% if page.url=='/blogs.html' %} class="active" {% endif %}>博客</a>
-      </li>
+      {% endif %}
       <li>
         <a href="https://github.com/{{ site.github_username }}" target="_blank">
           <img class="github-icon" src="/assets/images/logo/github.png" />

@@ -1,0 +1,31 @@
+.post {
+  margin: 0 auto;
+  padding: 36px 0;
+  width: 900px;
+
+  .post-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .post-date {
+    padding: 8px 0 24px;
+    text-align: right;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+  }
+
+  .post-tags {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    > li {
+      padding: 4px 16px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: var(--color-tag);
+      cursor: pointer;
+    }
+  }
+}

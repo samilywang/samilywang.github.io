@@ -1,5 +1,13 @@
 @import './variable';
 @import './font';
 @import './element';
+
+// layouts
 @import './layouts/default';
-@import './pages/blogs';
+@import './layouts/post';
+
+// pages
+@import './pages/index';
+
+// markdowns
+@import './markdowns/modest.scss';
