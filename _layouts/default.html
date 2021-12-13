@@ -6,30 +6,48 @@
   <title>Samily Wang's Blog</title>
   <link rel="icon" href="/assets/images/favicon.ico" />
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/8daa4a4f86.js" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XF1TL0EPWM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XF1TL0EPWM');
+  </script>
   {% feed_meta %}
   {% seo %}
 </head>
 
 <body>
   <header class="header">
-    <div class="name-logo logo-font"><a href="/">{{ site.logo_text }}</a></div>
-    <ul class="menus">
-      {% if page.url!='/' %}
+    <div class="name-logo logo-font">
+      <a href="/">{{ site.logo_text }}</a>
+      <span class="logo-subtext">{{ site.logo_subtext }}</span>
+    </div>
+
+    <!-- <ul class="menus">
       <li>
-        <a href="/">首页</a>
+        <a href="/" {% if page.url=='/' %} class="active" {% endif %}>首页</a>
       </li>
-      {% endif %}
       <li>
-        <a href="https://github.com/{{ site.github_username }}" target="_blank">
-          <img class="github-icon" src="/assets/images/logo/github.png" />
-        </a>
+        <a href="/blogs" {% if page.url=='/blogs.html' %} class="active" {% endif %}>博客</a>
       </li>
-    </ul>
+    </ul> -->
   </header>
 
   <main class="main-viewport">
     {{ content }}
   </main>
+
+  <footer class="footer">
+    <span class="copyright">转载请注明出处</span>
+    <a href="mailto:{{ site.email }}">
+      <i class="fas fa-paper-plane contact-icon"></i>
+    </a>
+    <a href="https://github.com/{{ site.github_username }}" target="_blank">
+      <i class="fab fa-github contact-icon"></i>
+    </a>
+  </footer>
 </body>
 
 </html>

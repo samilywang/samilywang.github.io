@@ -1,3 +1,9 @@
+.back-btn {
+  padding-top: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .post {
   margin: 0 auto;
   padding: 36px 0;
@@ -24,7 +30,7 @@
       padding: 4px 16px;
       border-radius: 4px;
       color: #fff;
-      background-color: var(--color-tag);
+      background-color: var(--color-primary);
       cursor: pointer;
     }
   }

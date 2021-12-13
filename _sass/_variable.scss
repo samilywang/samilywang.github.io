@@ -1,9 +1,15 @@
 :root {
+  // 基础颜色
   --color-black: #000;
   --color-white: #fff;
-  // --color-primary: coral;
-  --color-primary: #00bfff;
+  --color-primary: rgb(82, 145, 218);
+  --color-success: green;
+  --color-warning: orange;
+  --color-error: red;
+  --color-info: #999;
+  --color-border: #ccc;
+
+  // 文本颜色
   --color-text: #333;
   --color-text-secondary: #999;
-  --color-tag: #00bfff;
 }

@@ -1,6 +1,6 @@
 .main-viewport {
   margin: 0 auto;
-  min-height: calc(100% - 60px);
+  min-height: calc(100% - 60px - 55px);
   max-width: 1280px;
 }
 
@@ -10,11 +10,16 @@
   padding: 6px 0;
   max-width: 1280px;
   height: 60px;
+  border-bottom: 1px dashed var(--color-border);
 
   .name-logo {
     display: inline-block;
     height: 100%;
     font-size: 48px;
+  }
+
+  .logo-subtext {
+    font-size: 24px;
   }
 
   .menus {
@@ -39,26 +44,33 @@
         padding-bottom: 8px;
         border-bottom: 2px solid var(--color-primary);
       }
-
-      .github-icon {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        width: 32px;
-        height: 32px;
-      }
     }
   }
 }
 
-@media (max-width: 1324px) {
-  .main-viewport {
-    margin: 0 24px;
-    max-width: 100%;
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 16px 0;
+  max-width: 1280px;
+  border-top: 1px dashed var(--color-border);
+
+  .copyright {
+    color: var(--color-info);
   }
 
-  .header {
+  .contact-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1324px) {
+  .main-viewport,
+  .header,
+  .footer {
     margin: 0 24px;
     max-width: 100%;
   }

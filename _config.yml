@@ -1,5 +1,7 @@
 markdown: kramdown
 logo_text: Samily
+logo_subtext: tea, cat and a frond-end engineer
+email: samilywang@icloud.com
 github_username: samilywang
 plugins:
   - jekyll-feed
