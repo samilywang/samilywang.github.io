@@ -8,12 +8,11 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <!-- <ul class="post-tags">
-    {% for tag in page.tags %}
-    <li>{{ tag }}</li>
-    {% endfor %}
-  </ul> -->
-  <p class="post-date">Samily, {{ page.date | date: "%Y-%m-%d"}}</p>
+  <div class="post-date">Samily, {{ page.date | date: "%Y-%m-%d"}}</div>
+  <div class="post-tags">
+    <i class="fas fa-tags"></i>
+    {{ page.tags }}
+  </div>
 
   <div class="markdown">
     {{ content }}
